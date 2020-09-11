@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordData"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/backPreviousId"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/colored_border_round_shape"
+                android:backgroundTint="#EAE6E6"
+                android:shape="ring"
+                app:cardCornerRadius="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diabetes point :   "
+                        android:textSize="16sp"
+                        android:textColor="#141313"
+                        />
+
+                    <EditText
+                        android:id="@+id/diabetesPointId"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/colored_border_round_shape"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        android:digits="0123456789."
+                        />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/colored_border_round_shape"
+                android:backgroundTint="#EAE6E6"
+                android:shape="ring"
+                app:cardCornerRadius="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/beforeEatId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="Before Eat"
+                            android:layout_weight="1"
+                            android:textColor="#0F0F0F"
+                            android:layout_marginRight="10dp"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/afterEatId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="After Eat"
+                            android:layout_weight="1"
+                            android:textColor="#0F0F0F"
+                            android:layout_marginLeft="10dp"
+                            />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/colored_border_round_shape"
+                android:backgroundTint="#EAE6E6"
+                android:shape="ring"
+                app:cardCornerRadius="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date :   "
+                            android:textSize="16sp"
+                            android:textColor="#141313"
+                            android:layout_gravity="center"
+                            />
+
+                        <TextView
+                            android:id="@+id/manualDateId"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/colored_border_round_shape"
+                            android:gravity="center"
+                            android:text="05-06-2020"
+                            android:textColor="#1C1B1B"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/selectDateButtonId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Select date manually"
+                        android:textColor="#FDFDFD"
+                        android:background="@drawable/round_shape"
+                        android:backgroundTint="#64B5F6"
+                        android:layout_marginTop="10dp"
+                        android:padding="3dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/colored_border_round_shape"
+                android:backgroundTint="#EAE6E6"
+                android:shape="ring"
+                app:cardCornerRadius="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time :   "
+                            android:textSize="16sp"
+                            android:textColor="#141313"
+                            android:layout_gravity="center"
+                            />
+
+                        <TextView
+                            android:id="@+id/manualTimeId"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/colored_border_round_shape"
+                            android:layout_gravity="center"
+                            android:text="09:10"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:textColor="#1C1B1B"
+                            />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/selectTimeButtonId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Select Time manually"
+                        android:textColor="#FDFDFD"
+                        android:background="@drawable/round_shape"
+                        android:backgroundTint="#64B5F6"
+                        android:layout_marginTop="10dp"
+                        android:padding="3dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/colored_border_round_shape"
+                android:backgroundTint="#EAE6E6"
+                android:shape="ring"
+                app:cardCornerRadius="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Short Note (optional)"
+                        android:layout_gravity="left"
+                        android:textSize="16sp"
+                        android:textColor="#131212"
+                        />
+
+                    <EditText
+                        android:id="@+id/noteId"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:hint="Write here"
+                        android:background="@drawable/colored_border_round_shape"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/saveStateButtonId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
+                android:text="Save State"
+                android:textAllCaps="false"
+                android:textColor="#1F1D1D"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Internet connection needed"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+<!--
+
+<ProgressBar
+                android:id="@+id/progressBarId3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                />
+
+-->

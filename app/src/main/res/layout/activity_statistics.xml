@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Statistics"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+
+       <com.github.mikephil.charting.charts.LineChart
+           android:id="@+id/lineChartId2"
+           android:layout_width="match_parent"
+           android:layout_height="300dp"
+           android:layout_marginBottom="20dp"
+           />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="5dp"
+           android:layout_marginLeft="5dp"
+           >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Total Checked "
+               android:textSize="14sp"
+               android:background="@drawable/round_shape"
+               android:backgroundTint="#7C4ECC"
+               android:padding="5dp"
+               android:textColor="#fff"
+               />
+
+           <TextView
+               android:id="@+id/totalCheckedId"
+               android:layout_width="60dp"
+               android:layout_height="wrap_content"
+               android:text="       "
+               android:textSize="14sp"
+               android:layout_marginLeft="10dp"
+               android:textStyle="bold"
+               android:background="@drawable/colored_border_round_shape"
+               android:padding="5dp"
+               android:gravity="center"
+               />
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="5dp"
+           android:layout_marginLeft="5dp"
+           >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Before Eat Checked "
+               android:textSize="14sp"
+               android:background="@drawable/round_shape"
+               android:backgroundTint="#6071CD"
+               android:padding="5dp"
+               android:textColor="#fff"
+               />
+
+           <TextView
+               android:id="@+id/checkedBeforeEatId"
+               android:layout_width="60dp"
+               android:layout_height="wrap_content"
+               android:text="       "
+               android:textSize="14sp"
+               android:layout_marginLeft="10dp"
+               android:textStyle="bold"
+               android:background="@drawable/colored_border_round_shape"
+               android:padding="5dp"
+               android:gravity="center"
+               />
+
+           <TextView
+               android:id="@+id/beforeAvgId"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:text="Avg : "
+               android:textSize="14sp"
+               android:layout_marginLeft="5dp"
+               android:textStyle="bold"
+               android:background="@drawable/colored_border_round_shape"
+               android:padding="5dp"
+               android:gravity="center"
+               />
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="5dp"
+           android:layout_marginLeft="5dp"
+           >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="After Eat Checked "
+               android:textSize="14sp"
+               android:background="@drawable/round_shape"
+               android:backgroundTint="#559FDA"
+               android:padding="5dp"
+               android:textColor="#fff"
+               />
+
+           <TextView
+               android:id="@+id/checkedAfterEatId"
+               android:layout_width="60dp"
+               android:layout_height="wrap_content"
+               android:text="       "
+               android:textSize="14sp"
+               android:layout_marginLeft="10dp"
+               android:textStyle="bold"
+               android:background="@drawable/colored_border_round_shape"
+               android:padding="5dp"
+               android:gravity="center"
+               />
+
+           <TextView
+               android:id="@+id/afterAvgId"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:text="Avg : "
+               android:textSize="14sp"
+               android:layout_marginLeft="5dp"
+               android:textStyle="bold"
+               android:background="@drawable/colored_border_round_shape"
+               android:padding="5dp"
+               android:gravity="center"
+               />
+
+
+       </LinearLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="20dp"
+           android:text="Lowest"
+           android:textSize="14sp"
+           android:textColor="#5C6BC0"
+           />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:background="@drawable/colored_border_round_shape"
+           android:gravity="center"
+           >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Point :"
+               android:textSize="12sp"
+               android:layout_marginLeft="2dp"
+               />
+
+           <TextView
+               android:id="@+id/lowestPointId"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="   "
+               android:textSize="16sp"
+               android:layout_marginLeft="10dp"
+               android:background="@drawable/button_border"
+               android:backgroundTint="#FFEE58"
+               android:textStyle="bold"
+               android:padding="2dp"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Date :"
+               android:textSize="12sp"
+               android:layout_marginLeft="5dp"
+               />
+
+           <TextView
+               android:id="@+id/lowestDateId"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="          "
+               android:textSize="16sp"
+               android:layout_marginLeft="5dp"
+               android:background="@drawable/button_border"
+               android:backgroundTint="#98D4F0"
+               android:textStyle="bold"
+               android:padding="2dp"
+               />
+
+           <TextView
+               android:id="@+id/lowestEatStateId"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="          "
+               android:textSize="16sp"
+               android:layout_marginLeft="5dp"
+               android:background="@drawable/button_border"
+               android:backgroundTint="#A4B0F7"
+               android:textStyle="bold"
+               android:padding="2dp"
+               />
+
+
+       </LinearLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="20dp"
+           android:text="Highest"
+           android:textSize="14sp"
+           android:textColor="#5C6BC0"
+           />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:background="@drawable/colored_border_round_shape"
+           android:gravity="center"
+           >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Point :"
+               android:textSize="12sp"
+               android:layout_marginLeft="2dp"
+               />
+
+           <TextView
+               android:id="@+id/highestPointId"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="   "
+               android:textSize="16sp"
+               android:layout_marginLeft="10dp"
+               android:background="@drawable/button_border"
+               android:backgroundTint="#FFEE58"
+               android:textStyle="bold"
+               android:padding="2dp"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Date :"
+               android:textSize="12sp"
+               android:layout_marginLeft="5dp"
+               />
+
+           <TextView
+               android:id="@+id/highestDateId"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="          "
+               android:textSize="16sp"
+               android:layout_marginLeft="5dp"
+               android:background="@drawable/button_border"
+               android:backgroundTint="#98D4F0"
+               android:textStyle="bold"
+               android:padding="2dp"
+               />
+
+           <TextView
+               android:id="@+id/highestEatStateId"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="          "
+               android:textSize="16sp"
+               android:layout_marginLeft="5dp"
+               android:background="@drawable/button_border"
+               android:backgroundTint="#A4B0F7"
+               android:textStyle="bold"
+               android:padding="2dp"
+               />
+
+
+       </LinearLayout>
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="20dp"
+           android:text=" Total Average"
+           android:textSize="14sp"
+           android:textColor="#5C6BC0"
+           />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:background="@drawable/colored_border_round_shape"
+           android:gravity="center"
+           >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Point :"
+               android:textSize="16sp"
+               />
+
+           <TextView
+               android:id="@+id/averagePointId"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="   "
+               android:textSize="20sp"
+               android:layout_marginLeft="10dp"
+               android:background="@drawable/button_border"
+               android:backgroundTint="#FFD54F"
+               android:textStyle="bold"
+               />
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+</ScrollView>
